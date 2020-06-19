@@ -1,0 +1,38 @@
+{
+  "name": "mongosync",
+  "version": "1.0.0",
+  "description": "sync between mongoDB and UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint":"npx eslint server config *.js --fix"
+  },
+  "author": "parag.m.rahangdale@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.5",
+    "express-winston": "^4.0.3",
+    "helmet": "^3.23.1",
+    "http-status": "^1.4.2",
+    "joi": "^14.3.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.10.0",
+    "save": "^2.4.0",
+    "winston": "^3.2.1"
+  }
+}
