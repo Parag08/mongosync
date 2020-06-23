@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint":"npx eslint server config *.js --fix"
+    "lint": "npx eslint server config *.js --fix"
   },
   "author": "parag.m.rahangdale@gmail.com",
   "license": "ISC",
@@ -16,6 +16,8 @@
     "eslint-plugin-import": "^2.21.2"
   },
   "dependencies": {
+    "azure-iot-common": "^1.12.3",
+    "azure-iothub": "^1.12.3",
     "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",

@@ -20,6 +20,7 @@ const envVarsSchema = Joi.object({
     .description('Mongo DB host url'),
   MONGO_PORT: Joi.number()
     .default(27017),
+  IOT_HUB_CONNECTION_STRING: Joi.string().required(),
 }).unknown()
   .required();
 
@@ -37,6 +38,7 @@ const config = {
     host: envVars.MONGO_HOST,
     port: envVars.MONGO_PORT,
   },
+  iotHubConnectionString: envVars.IOT_HUB_CONNECTION_STRING,
 };
 
 module.exports = config;
