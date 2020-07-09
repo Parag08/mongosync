@@ -10,5 +10,9 @@ jobs:
         - echo 'Installing Deps!'
         - npm install
     - stage: deploy
+      addons:
+        apt:
+          packages:
+            - sshpass
       script:
         - sshpass -p $PASSWORD ssh $USERNAME@$HOST "cd mongosync && git pull && pm2 restart 0"
