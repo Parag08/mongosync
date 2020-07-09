@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "13.8.0"
+cache: npm
+jobs:
+  include:
+    - stage: test
+      script:
+        - echo 'Deploy!!'
+        - echo 'Installing Deps!'
+        - npm install
+    - stage: deploy
+      script:
+        - sshpass -p $PASSWORD ssh $USERNAME@$HOST "cd mongosync && git pull && pm2 restart 0"
