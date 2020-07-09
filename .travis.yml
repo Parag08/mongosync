@@ -8,7 +8,6 @@ jobs:
       script:
         - echo 'Deploy!!'
         - echo 'Installing Deps!'
-        - npm install
     - stage: deploy
       addons:
         apt:
