@@ -1,5 +1,5 @@
 # mongosync
-
+[![Build Status](https://travis-ci.org/Parag08/mongosync.svg?branch=master)](https://travis-ci.org/Parag08/mongosync)
 ## Installation
 
 npm install
