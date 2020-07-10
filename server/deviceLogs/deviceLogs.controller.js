@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const logger = require('../../config/winston');
+// const logger = require('../../config/winston');
 
 /**
  * Get user list.
@@ -13,11 +13,10 @@ function list(req, res, next) {
       next(err);
     } else {
       const { limit = 50, skip = 0 } = req.query;
-      collection.find({ limit, skip }).toArray((errNew, data) => {
+      collection.find().limit(limit).skip(skip).toArray((errNew, data) => {
         if (errNew) {
           next(errNew);
         } else {
-          logger.info('found data');
           res.json(data);
         }
       });
