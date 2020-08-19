@@ -16,6 +16,8 @@ const APIError = require('../server/helpers/APIError');
 
 const app = express();
 
+let expressWs = require('express-ws')(app);
+
 if (config.env === 'development') {
   app.use(logger('dev'));
 }

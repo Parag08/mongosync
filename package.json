@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "express-validation": "^3.0.5",
     "express-winston": "^4.0.3",
+    "express-ws": "^4.0.0",
     "helmet": "^3.23.1",
     "http-status": "^1.4.2",
     "joi": "^14.3.1",
